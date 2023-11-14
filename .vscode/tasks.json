@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "typescript",
+            "tsconfig": "functions/tsconfig.json",
+            "option": "watch",
+            "problemMatcher": ["$tsc-watch"],
+            "group": "build",
+            "label": "tsc: watch - functions/tsconfig.json"
+        },
+        {
+            "type": "typescript",
+            "tsconfig": "frontend/tsconfig.json",
+            "problemMatcher": ["$tsc"],
+            "option": "watch",
+            "group": "build",
+            "label": "tsc: watch - frontend/tsconfig.json"
+        }
+    ]
+}

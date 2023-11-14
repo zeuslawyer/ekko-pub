@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body class="text-center">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main role="main" class="inner cover">
+                <h3 class="cover-heading">
+                    Here are your links from last week!
+                </h3>
+                <ol class="list-group">
+                    <% links.forEach(function(linkdata) {%>
+                    <li>
+                        <a
+                            href="<%= linkdata.url%>"
+                            class="list-group-item text-dark"
+                        >
+                            <%=linkdata.url.trim()%>
+                        </a>
+                        (sent on <%= formatDate(linkdata.createdAt)%>).
+                    </li>
+                    <%});%>
+                </ol>
+            </main>
+        </div>
+        <div>
+            <footer>
+                <span style="font-size: 9px; font-style: italic;">
+                    Digest Id: <%=digestId%>
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!-- reference template :  https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be -->
+<!-- TODO Banner and Footer -->

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "strictNullChecks": true,
+        "outDir": "lib",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017",
+        "allowJs": true
+    },
+    "compileOnSave": true,
+    "include": ["src"],
+    "exclude": [
+        "node_modules",
+        "./node_modules",
+        "./node_modules/*",
+        "./node_modules/@types/node/index.d.ts"
+    ]
+}
